@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #243047;
+            text-align: center;
+        }
+
+        header {
+            background: #16324f;
+            color: white;
+            padding: 35px 15px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000012;
+        }
+
+        button {
+            background: #087e8b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #16324f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My First Website!</h1>
+        <p>My journey into web development starts here.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am learning HTML, Git, GitHub, and deployment.</p>
+
+            <h2>My Learning Goals</h2>
+            <p>Build websites, learn backend development, and create full-stack projects.</p>
+
+            <button onclick="showMessage()">Click Me</button>
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>My First Website | Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Congratulations! Your JavaScript is working!";
+        }
+    </script>
+
+</body>
+</html>
